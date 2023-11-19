@@ -1,0 +1,91 @@
+body {
+    background-color: #bcf4de;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    font-family: cursive;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more styles as needed */
+#searchInput{
+    margin: 30px;
+    width: 269px;
+    text-overflow: ellipsis;
+    font-family: cursive;
+    height: 40px;
+    padding: 0 20px;
+    border: 2px black;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    background-color: #143642;
+    color: white;
+    font-family: cursive;
+}
+
+#resultContainer{
+    overflow-y: auto;
+}
+
+.word {
+    margin: 10px 20px;
+    background-color: #EEC6CA;
+    border: 1px dashed black;
+    border-radius: 10px;
+    max-width: 70vw;
+    padding: 0 10px;
+}
+
+#resultContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+#resultContainer::-webkit-scrollbar-track {
+    background: none; 
+}
+
+#resultContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 6px;
+}
+
+#resultContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+@media (min-width: 1024px) {
+    #resultContainer {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #resultContainer {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 767px) {
+    #resultContainer {
+        height: 50vh;
+    }
+}

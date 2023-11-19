@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dictionary App</title>
+    <script src="script.js" async="true"></script>
+</head>
+<body>
+    <header>
+        <h1 id="appTitle"></h1>
+    </header>
+
+    <main>
+        <section class="search-container">
+            <label for="searchInput">Enter a word</label>
+            <input type="text" id="searchInput" placeholder="e.g., Apple" onkeydown="checkKey()">
+            <button onclick="searchWord()">Search</button>
+        </section>
+
+        <section id="resultContainer">
+            <!-- Display word definition, part of speech, and example sentences here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Dictionary App</p>
+    </footer>
+</body>
+</html>
