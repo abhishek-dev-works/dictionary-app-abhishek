@@ -1,8 +1,7 @@
 body {
     background-color: #bcf4de;
-    /* width: 100vw; */
-    /* height: 100vh; */
     font-family: cursive;
+    overflow: hidden;
 }
 
 .container {
